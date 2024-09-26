@@ -1,0 +1,41 @@
+<MainScreen>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 10
+
+    TextInput:
+        id: username
+        hint_text: 'Usuario'
+        multiline: False
+        font_size: 18
+        size_hint_y: None
+        height: 40
+
+    TextInput:
+        id: password
+        hint_text: 'Contraseña'
+        multiline: False
+        password: True
+        font_size: 18
+        size_hint_y: None
+        height: 40
+
+    Button:
+        id: login_button
+        text: 'Iniciar sesión'
+        font_size: 20
+        size_hint_y: None
+        height: 50
+
+    Button:
+        id: register_button
+        text: 'Registrarse'
+        font_size: 16
+        size_hint_y: None
+        height: 40
+
+    Label:
+        id: message
+        text: ''
+        font_size: 16
+        color: 1, 0, 0, 1  # Rojo para mensajes de error
